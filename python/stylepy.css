@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: Josefin Sans;
+    color: aliceblue;
+}
+
+#nav{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+#lis{
+    display: flex;
+    position: absolute;
+    top: 1mm;
+    right: 1mm;
+}
+
+#lis li{
+    padding-left: 37.7px;
+    padding-right: 37.7px;
+    list-style: none;
+    font-style: none;
+    letter-spacing: 10px;
+}
+
+#lis li a{
+    color: azure;
+    text-decoration: none;
+}
+
+#lis li a:hover {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#lg{
+    position: absolute;
+    top: -2.5px;
+    left: 10px;
+    width: 60px;
+}
+
+#ham{
+    display: none;
+}
+
+#sepy{
+    width: 100%;
+    height: 50vw;
+}
+
+#hpy{
+    background-image: url(https://www.zdnet.com/a/img/resize/816da22fbfe279a4f19cadd7fff83a7f6023c725/2021/09/02/f9723f89-2e71-4a46-a59f-f6838771f2ed/python-code-magnifying-glass-programming-language.jpg?auto=webp&width=1280);
+    width: 100%;
+    height: 50vw;
+    background-size: cover;
+    filter: blur(8px);
+}
+
+#nom{
+    border: 3vw solid black;
+    background-color: black;
+    position: absolute;
+    left: 38vw;
+    top: 10vw;
+    font-size: 6vw;
+    text-align: center;
+    margin: 0;
+}
+
+#deno{
+    position: absolute;
+    top: 30vw;
+    left: 13%;
+    width: 70vw;
+    font-size: 3vw;
+    text-align: center;
+    height: 50vw;
+    margin: 0;
+}
+
+.sep{
+    top: 40%;
+    width: 100%;
+    height: 4px  ;
+    background-color: black;
+}
+
+.docs{
+    background-color:#22269a;
+    height: 50vh;
+}
+
+.bc{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5vw;
+    height: 4vw;
+    font-size: 3vw;
+    color: black;
+    background-color:rgba(255,236,0,1);
+}
+
+.pyli{
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    top: 80px;
+    font-size: 2vw;
+    transition: 0.5s;
+}
+
+.pyli:hover{
+   text-shadow: 0 0 10px rgba(255,236,0,1)
+}
+
+.pyli a{
+    color: rgb(248, 246, 224);
+    text-decoration: none;
+}
+
+@media (max-width: 660px){
+
+    #nav li{
+        display: none;
+    }
+
+    #ham{
+        display: contents;
+        position: absolute;
+        transform: translateX(10px);
+    }
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 3vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+#cop{
+    position: relative;
+    bottom: 8px;
+}

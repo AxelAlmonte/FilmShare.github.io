@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: Josefin Sans;
+    color: aliceblue;
+}
+
+#nav{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+#lis{
+    display: flex;
+    position: absolute;
+    top: 1mm;
+    right: 1mm;
+}
+
+#lis li{
+    padding-left: 37.7px;
+    padding-right: 37.7px;
+    list-style: none;
+    font-style: none;
+    letter-spacing: 10px;
+}
+
+#lis li a{
+    color: azure;
+    text-decoration: none;
+}
+
+#lis li a:hover {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#lg{
+    position: absolute;
+    top: -2.5px;
+    left: 10px;
+    width: 60px;
+}
+
+#ham{
+    display: none;
+}
+
+#hjs{
+    background-image: url(https://www.freecodecamp.org/news/content/images/2022/08/pexels-antonio-batinic--4164418--1-.jpg);
+    width: 100%;
+    height: 50vw;
+    filter: blur(8px);
+}
+
+#nom{
+    border: 3vw solid black;
+    background-color: black;
+    position: absolute;
+    left: 33vw;
+    top: 10vw;
+    font-size: 6vw;
+    text-align: center;
+    margin: 0;
+}
+
+#deno{
+    position: absolute;
+    top: 30vw;
+    left: 13%;
+    width: 70vw;
+    font-size: 3vw;
+    text-align: center;
+    height: 50vw;
+    margin: 0;
+}
+
+.sep{
+    top: 40%;
+    width: 100%;
+    height: 4px  ;
+    background-color: black;
+}
+
+.docs{
+    background-color:black;
+    height: 50vh;
+}
+
+.bc{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5vw;
+    height: 4vw;
+    font-size: 3vw;
+    color: black;
+    background-color:#ffec00;
+}
+
+.jsli{
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    top: 80px;
+    font-size: 2vw;
+    transition: 0.5s;
+}
+
+.jsli:hover{
+   text-shadow: 0 0 10px rgba(255,236,0,1)
+}
+
+.jsli a{
+    color: rgb(248, 246, 224);
+    text-decoration: none;
+}
+
+@media (max-width: 660px){
+
+    #nav li{
+        display: none;
+    }
+
+    #ham{
+        display: contents;
+        position: absolute;
+        transform: translateX(10px);
+    }
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 3vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+#cop{
+    position: relative;
+    bottom: 8px;
+}
